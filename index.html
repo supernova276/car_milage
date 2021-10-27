@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<title>Car Milage</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+
+    <title>Car Milage Calculator</title>
 </head>
 <body>
 
-<div class="bgimg">
-    <img src="img/logo.png" alt="" class="logo">
+<div class="maincontainer">
+
+    <img src="img/CAR MILAGE (2).png " class="logo">
+     <div class="heading">
+    <h1>Calculate your car milage instantly !</h1>
+    </div>
+
+    <div class="container">
+
+         <label>Car milage = no of kilometrs travelled 
+                             <hr>
+             liters of fule used</label>
+
+        <div class="cont1">
+            <div class="feild_name" aria-placeholder="km">distance travelled (km)</div>
+            <input type="number" id="distTravelled">
+        </div>
+
+        <div class="cont1">
+            <div class="feild_name" aria-placeholder="ltr">fuel used (ltr)</div>
+            <input type="number" id="fuelUsed">
+        </div>
+        <div class="cont1">
+        <button type="submit" onclick="calcMilage()">Calculate</button>
+        <button type="submit" onclick="reset()">Reset</button>
+        </div>
+
+        <!-- intially hidden -->
+        <!-- <div class="cont1">
+
+            <div class="feild_name" placeholder="result in km/ltr">result</div>
+            <div class="answer">ye hai answer</div>
+        </div>-->
+    </div>
+
 </div>
 
-</body>
-</html>
+<script src="js/index.js"></script> 
+    
