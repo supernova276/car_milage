@@ -14,23 +14,13 @@ const assignVal=(result)=>{
   }
    
   const addContainer=(result)=>{      
-    //creating a div using javascript
     const resContainer=document.createElement('div');
-
-    //adding classes inside the div
-
     resContainer.classList.add('cont1');
-
-    //data inside the container
     const htmlData=`
     <div class="feild_name" placeholder="result in km/ltr">result</div>
     <div class="answer"></div>`;
-
-    //now insert the data inside the div already created by us
        resContainer.insertAdjacentHTML('afterbegin',htmlData);
-       //finally inserting the element in the end of the container
       document.querySelector('.container').appendChild(resContainer);
-
       assignVal(result);
 
   }
@@ -39,19 +29,13 @@ const assignVal=(result)=>{
 const calcMilage=()=>{
 
     let kmTravelled =document.getElementById("distTravelled").value;
-
   let ltrUsed=document.getElementById("fuelUsed").value;
-
-  //check to  see if input values are positive or not
 
   if(kmTravelled<=0 || ltrUsed<=0){
       alert("please enter values greater than zero");
       return;
   }
-
-
     let result;
-
     result=kmTravelled/ltrUsed;
 
        if(click>=1 || check(result)==1)return;
@@ -70,4 +54,11 @@ const reset=()=>{
     console.log(lastKid);
     lastKid.removeChild(lastKid.lastChild);
  
+}
+const calcAmount=()=>{
+    const fuelInput=document.getElementById("fuelPrice").value;   
+    let res=fuelInput*(document.getElementById("fuelUsed").value);
+    console.log(res);
+    res=res.toFixed(0);
+    document.getElementById("totalAmt").innerHTML=`Rs ${res}`;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
@@ -29,13 +30,13 @@
              liters of fule used</label>
 
         <div class="cont1">
-            <div class="feild_name" aria-placeholder="km">distance travelled (km)</div>
-            <input type="number" id="distTravelled">
+            <div class="feild_name">Distance travelled (km)</div>
+            <input type="number" id="distTravelled" placeholder="km">
         </div>
 
         <div class="cont1">
-            <div class="feild_name" aria-placeholder="ltr">fuel used (ltr)</div>
-            <input type="number" id="fuelUsed">
+            <div class="feild_name">Fuel used (ltr)</div>
+            <input type="number" id="fuelUsed" placeholder="ltr">
         </div>
         <div class="cont1">
         <button type="submit" onclick="calcMilage()">Calculate</button>
@@ -48,6 +49,16 @@
             <div class="feild_name" placeholder="result in km/ltr">result</div>
             <div class="answer">ye hai answer</div>
         </div>-->
+    </div>
+    <div class="container1">
+        <div class="cont1">
+            <div class="feild_name">current fuel price</div>
+            <input id="fuelPrice" type="number" placeholder="amount in rs" oninput="calcAmount()">
+        </div>
+    <div class="cont1">
+        <div class="feild_name">total amount</div>
+        <div class="answer" id="totalAmt">Rs 0</div>
+    </div>
     </div>
 
 </div>
