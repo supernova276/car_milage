@@ -48,11 +48,14 @@ const reset=()=>{
     document.getElementById('distTravelled').value='';
     console.log(document.getElementById('distTravelled').value);
     document.getElementById('fuelUsed').value='';
+    document.getElementById('fuelPrice').value='';
+    document.getElementById('totalAmt').innerHTML=`Rs ${0}`;
     click=0;
 
     const lastKid=document.querySelector('.container');
     console.log(lastKid);
     lastKid.removeChild(lastKid.lastChild);
+    
  
 }
 const calcAmount=()=>{

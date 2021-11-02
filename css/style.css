@@ -4,9 +4,9 @@
   padding:0;
 }
 body,html{
-  height:100%;
   margin:0;
   overflow-x:hidden;
+  height:100%;
 }
 
 .maincontainer{
@@ -14,8 +14,8 @@ body,html{
   background-image:url("../img/img1.gif");
   opacity:0.8;
   background-position:center;  
-  background-repeat:repeat-y;
-  background-size:cover;
+  background-size:cover; 
+  background-repeat:no-repeat;
   height:100%;
   width:100%;
 }
